@@ -7,7 +7,7 @@ import 'ProductsPage.dart';
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
-
+//kkkkkkkkkkkk
   @override
   Widget build(BuildContext context) {
     TextEditingController EmailController = TextEditingController();
@@ -52,6 +52,19 @@ class SignUpPage extends StatelessWidget {
                     Column(
                       children: [
                         TextFormField(
+                          validator: (value) {
+                            if(value== null||value.isEmpty)
+                            {
+                              return "please fill the text field";
+                            }
+                            else
+                            {
+                              return null;
+                            }
+                          },
+
+
+
                           controller: NameController,
                           decoration: InputDecoration(
                               border: OutlineInputBorder(
