@@ -65,7 +65,7 @@ class SignUpPage extends StatelessWidget {
                           validator: (value) {
                             if(value== null||value.isEmpty)
                               {
-                                return "please fill the text field";
+                                return "please fill the texttt field";
                               }
                             else
                               {
